@@ -1,0 +1,54 @@
+
+
+
+.search-bar{
+    background-color: #d4d8dd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+
+.Home-button {
+    background-color: #d4d8dd;
+    border: none;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 80%;
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.Home-button.large {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    text-align: center;
+   
+}
+.Home-button:hover {
+    background-color: #b8bdc4;
+}
+
+.Home-link {
+    color: #800000
+}
+
+.small-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 80%;
+}

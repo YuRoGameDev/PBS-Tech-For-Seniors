@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #e6ecf2;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #000;
+
+  flex-direction: column;
+  align-items: center;
+
+}
+
+p {
+  font-size: 20px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.content-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  max-width: clamp(400px, 50vw, 1000px);
+}
+
+.content-scroll {
+  width: 500vw;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* box-sizing: border-box; */
+  padding-right: 70px;
+  position: relative;
+}
+
+/* Blink-based browsers (Chrome, Edge, Opera) using -webkit- pseudo-elements */
+.content-scroll::-webkit-scrollbar,
+.button-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.content-scroll::-webkit-scrollbar-track,
+.button-scroll::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.content-scroll::-webkit-scrollbar-thumb,
+.button-scroll::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 6px;
+  border: 3px solid #f4f4f4;
+}
+
+/* Remove the top and bottom arrows */
+.content-scroll::-webkit-scrollbar-button,
+.button-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+#container {
+  flex: 1;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #4B4B6A;
+  width: 100%;
+}
+
+header {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.header-h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+footer button:hover {
+  color: #D1D1E0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.divider {
+  width: 90%;
+  border: 1px solid black;
+  margin: 10px 0 0px 0;
+}
+
+.button {
+  background-color: #A6B1E1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px;
+}
+
+
+.button:hover {
+  border: 1px solid green;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  /* justify-content: center;  */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button-scroll {
+  width: 500vw;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* box-sizing: border-box; */
+  padding-right: 70px;
+  position: relative;
+}
+
+.searchBar {
+  width: 50%;
+}
+
+.button-container-home {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 200px;
+}
+
+.titles {
+  font-size: 50px;
+}
+
+/* scam pages */
+.highlight {
+  color: #ad0932;
+  ;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+ol {
+  display: inline-block;
+  text-align: center;
+  padding-left: 0px;
+}
